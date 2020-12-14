@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA5AD3D257E61D900F45AF8 /* AppCompendium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5AD3C257E61D900F45AF8 /* AppCompendium.swift */; };
+		1BA5AD7325826DC600F45AF8 /* EggBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5AD7225826DC600F45AF8 /* EggBrain.swift */; };
 		AD5C106222D34E35001E14A5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD5C106122D34E35001E14A5 /* README.md */; };
 		AD5C106622D36212001E14A5 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD5C106522D36212001E14A5 /* alarm_sound.mp3 */; };
 		ADF037EE22D332A800A69E9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF037ED22D332A800A69E9A /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BA5AD3C257E61D900F45AF8 /* AppCompendium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCompendium.swift; sourceTree = "<group>"; };
+		1BA5AD7225826DC600F45AF8 /* EggBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggBrain.swift; sourceTree = "<group>"; };
 		AD5C106122D34E35001E14A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD5C106522D36212001E14A5 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		ADF037EA22D332A800A69E9A /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BA5AD7125826AC900F45AF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BA5AD7225826DC600F45AF8 /* EggBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1BA5AD762582725C00F45AF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADF037F122D332A800A69E9A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BA5AD782582726600F45AF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADF037F322D332A800A69E9A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ADF037E122D332A800A69E9A = {
 			isa = PBXGroup;
 			children = (
@@ -61,10 +89,12 @@
 		ADF037EC22D332A800A69E9A /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
+				1BA5AD3C257E61D900F45AF8 /* AppCompendium.swift */,
 				ADF037ED22D332A800A69E9A /* AppDelegate.swift */,
 				ADF037EF22D332A800A69E9A /* SceneDelegate.swift */,
-				ADF037F122D332A800A69E9A /* ViewController.swift */,
-				ADF037F322D332A800A69E9A /* Main.storyboard */,
+				1BA5AD762582725C00F45AF8 /* Controller */,
+				1BA5AD7125826AC900F45AF8 /* Model */,
+				1BA5AD782582726600F45AF8 /* View */,
 				ADF037F622D332AD00A69E9A /* Assets.xcassets */,
 				AD5C106522D36212001E14A5 /* alarm_sound.mp3 */,
 				ADF037F822D332AD00A69E9A /* LaunchScreen.storyboard */,
@@ -100,7 +130,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "The App Brewery";
 				TargetAttributes = {
 					ADF037E922D332A800A69E9A = {
@@ -146,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA5AD3D257E61D900F45AF8 /* AppCompendium.swift in Sources */,
 				ADF037F222D332A800A69E9A /* ViewController.swift in Sources */,
 				ADF037EE22D332A800A69E9A /* AppDelegate.swift in Sources */,
+				1BA5AD7325826DC600F45AF8 /* EggBrain.swift in Sources */,
 				ADF037F022D332A800A69E9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +232,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -260,6 +293,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
